@@ -1,0 +1,63 @@
+=== Task 5: File Organization ===
+--- Moved server_notice.txt to devops/ ---
+docker-compose.yml
+Dockerfile
+handbook.txt
+pipeline.txt
+server_notice.txt
+--- Moved logo_brief.txt to marketing/assets/ ---
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+--- Removed temp_debug.log from policies/ ---
+leave_policy.txt
+remote_work.txt
+--- Moved handbook.txt to hr/onboarding/ ---
+checklist.txt
+handbook.txt
+welcome_guide.txt
+--- Copied leave_policy.txt to onboarding/ ---
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+--- Renamed q1_launch.txt to q1_2026_launch.txt ---
+q1_2026_launch.txt
+social_media.txt
+--- Final Structure ---
+techcorp
+├── engineering
+│   ├── backend
+│   │   ├── app.js
+│   │   ├── database.sql
+│   │   └── server_config.txt
+│   ├── devops
+│   │   ├── docker-compose.yml
+│   │   ├── Dockerfile
+│   │   ├── pipeline.txt
+│   │   └── server_notice.txt
+│   └── frontend
+│       ├── app_config.txt
+│       ├── index.html
+│       └── styles.css
+├── hr
+│   ├── onboarding
+│   │   ├── checklist.txt
+│   │   ├── handbook.txt
+│   │   ├── leave_policy.txt
+│   │   └── welcome_guide.txt
+│   └── policies
+│       ├── leave_policy.txt
+│       └── remote_work.txt
+└── marketing
+    ├── assets
+    │   ├── banner.jpg
+    │   ├── brochure.pdf
+    │   ├── logo_brief.txt
+    │   └── logo.png
+    └── campaigns
+        ├── q1_2026_launch.txt
+        └── social_media.txt
+
+10 directories, 22 files

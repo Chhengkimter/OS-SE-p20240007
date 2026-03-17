@@ -1,0 +1,325 @@
+/
+total 2097240
+drwxr-xr-x  20 root root       4096 Mar 11 09:53 .
+drwxr-xr-x  20 root root       4096 Mar 11 09:53 ..
+lrwxrwxrwx   1 root root          7 Mar 11 09:48 bin -> usr/bin
+drwxr-xr-x   4 root root       4096 Mar 15 23:27 boot
+drwxrwxr-x   2 root root       4096 Mar 11 09:53 cdrom
+drwxr-xr-x  20 root root       5200 Mar 17 14:20 dev
+drwxr-xr-x 141 root root      12288 Mar 15 23:36 etc
+drwxr-xr-x   3 root root       4096 Mar 11 09:53 home
+lrwxrwxrwx   1 root root          7 Mar 11 09:48 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 Mar 11 09:48 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root          9 Mar 11 09:48 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root         10 Mar 11 09:48 libx32 -> usr/libx32
+drwx------   2 root root      16384 Mar 11 09:48 lost+found
+drwxr-xr-x   3 root root       4096 Mar 11 16:56 media
+drwxr-xr-x   2 root root       4096 Feb 21  2024 mnt
+drwxr-xr-x   3 root root       4096 Mar 12 18:41 opt
+dr-xr-xr-x 431 root root          0 Mar 17  2026 proc
+drwx------   4 root root       4096 Mar 11 16:55 root
+drwxr-xr-x  37 root root        960 Mar 17 14:13 run
+lrwxrwxrwx   1 root root          8 Mar 11 09:48 sbin -> usr/sbin
+drwxr-xr-x  11 root root       4096 Feb 21  2024 snap
+drwxr-xr-x   2 root root       4096 Feb 21  2024 srv
+-rw-------   1 root root 2147483648 Mar 11 09:48 swapfile
+dr-xr-xr-x  13 root root          0 Mar 17  2026 sys
+drwxrwxrwt  20 root root       4096 Mar 17 14:31 tmp
+drwxr-xr-x  14 root root       4096 Feb 21  2024 usr
+drwxr-xr-x  14 root root       4096 Feb 21  2024 var
+--- /etc ---
+/etc
+acpi
+adduser.conf
+alsa
+alternatives
+anacrontab
+apache2
+apg.conf
+apm
+apparmor
+apparmor.d
+apport
+appstream.conf
+apt
+avahi
+bash.bashrc
+bash_completion
+bash_completion.d
+bindresvport.blacklist
+binfmt.d
+bluetooth
+brlapi.key
+brltty
+brltty.conf
+ca-certificates
+ca-certificates.conf
+ca-certificates.conf.dpkg-old
+chatscripts
+console-setup
+cracklib
+cron.d
+cron.daily
+cron.hourly
+cron.monthly
+crontab
+cron.weekly
+cups
+cupshelpers
+dbus-1
+dconf
+debconf.conf
+debian_version
+default
+deluser.conf
+depmod.d
+dhcp
+dictionaries-common
+dpkg
+e2scrub.conf
+emacs
+environment
+environment.d
+ethertypes
+firefox
+fonts
+fprintd.conf
+fstab
+fuse.conf
+fwupd
+gai.conf
+gdb
+gdm3
+geoclue
+ghostscript
+glvnd
+gnome
+groff
+group
+group-
+grub.d
+gshadow
+gshadow-
+gss
+gtk-2.0
+gtk-3.0
+hdparm.conf
+host.conf
+hostid
+hostname
+hosts
+hosts.allow
+hosts.deny
+hp
+ifplugd
+init
+init.d
+initramfs-tools
+inputrc
+insserv.conf.d
+ipp-usb
+iproute2
+issue
+issue.net
+java-11-openjdk
+kernel
+kernel-img.conf
+kerneloops.conf
+ldap
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+legal
+libao.conf
+libaudit.conf
+libblockdev
+libibverbs.d
+libnl-3
+libpaper.d
+libreoffice
+lighttpd
+locale.alias
+locale.gen
+localtime
+logcheck
+login.defs
+logrotate.conf
+logrotate.d
+lsb-release
+machine-id
+magic
+magic.mime
+mailcap
+mailcap.order
+manpath.config
+matplotlibrc
+mercurial
+mime.types
+mke2fs.conf
+ModemManager
+modprobe.d
+modules
+modules-load.d
+mtab
+mysql
+nanorc
+netconfig
+netplan
+network
+networkd-dispatcher
+NetworkManager
+networks
+newt
+nftables.conf
+nsswitch.conf
+ODBCDataSources
+odbc.ini
+odbcinst.ini
+openmpi
+openni
+openni2
+openvpn
+opt
+os-release
+PackageKit
+pam.conf
+pam.d
+papersize
+passwd
+passwd-
+pcmcia
+perl
+pki
+pm
+pnm2ppa.conf
+polkit-1
+ppp
+printcap
+profile
+profile.d
+protocols
+pulse
+python3
+python3.10
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+rpc
+rsyslog.conf
+rsyslog.d
+rygel.conf
+sane.d
+security
+selinux
+sensors3.conf
+sensors.d
+services
+sgml
+shadow
+shadow-
+shells
+skel
+snmp
+speech-dispatcher
+ssh
+ssl
+subgid
+subgid-
+subuid
+subuid-
+subversion
+sudo.conf
+sudoers
+sudoers.d
+sudo_logsrvd.conf
+sysctl.conf
+sysctl.d
+systemd
+terminfo
+thermald
+thunderbird
+timezone
+tmpfiles.d
+ubuntu-advantage
+ucf.conf
+udev
+udisks2
+ufw
+update-manager
+update-motd.d
+update-notifier
+UPower
+usb_modeswitch.conf
+usb_modeswitch.d
+vdpau_wrapper.cfg
+vim
+vtrgb
+vulkan
+wgetrc
+wpa_supplicant
+X11
+xattr.conf
+xdg
+xml
+zsh_command_not_found
+--- /var ---
+/var
+backups
+cache
+crash
+lib
+local
+lock
+log
+mail
+metrics
+opt
+run
+snap
+spool
+tmp
+--- /home ---
+/home
+total 12
+drwxr-xr-x  3 root root 4096 Mar 11 09:53 .
+drwxr-xr-x 20 root root 4096 Mar 11 09:53 ..
+drwxr-x--- 24 rize rize 4096 Mar 15 23:58 rize
+--- /tmp ---
+/tmp
+total 100
+drwxrwxrwt 20 root root 4096 Mar 17 14:31 .
+drwxr-xr-x 20 root root 4096 Mar 11 09:53 ..
+-rw-rw-r--  1 rize rize   98 Mar 17  2026 56d9139221f3d5634335057c09e222bd-{87A94AB0-E370-4cde-98D3-ACC110C5967D}
+drwxrwxrwt  2 root root 4096 Mar 17  2026 .font-unix
+drwxrwxrwt  2 root root 4096 Mar 17  2026 .ICE-unix
+srwxrwxr-x  1 rize rize    0 Mar 17  2026 nxg3eb2tFYVZw5A9DDZDrtD--TD-webview-2613
+srwxrwxr-x  1 rize rize    0 Mar 17  2026 nxg3eb2tFYVZw5A9DDZDrtD--TD-webview-2637
+drwx------  5 root root 4096 Mar 17 14:14 snap-private-tmp
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-bluetooth.service-y5xZtj
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-bolt.service-IOZvpA
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-colord.service-1ZWBK3
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-fwupd.service-WXrC2g
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-ModemManager.service-yYuISK
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-power-profiles-daemon.service-rxItKl
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-switcheroo-control.service-FTdnfN
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-systemd-logind.service-NTRtwg
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-systemd-oomd.service-hVOTha
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-systemd-resolved.service-m25YIB
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-systemd-timesyncd.service-EQ0H21
+drwx------  3 root root 4096 Mar 17  2026 systemd-private-f08990fcea894179af981f7ebda5cc62-upower.service-rhGeor
+drwxrwxrwt  2 root root 4096 Mar 17  2026 .Test-unix
+-r--r--r--  1 rize rize   11 Mar 17  2026 .X0-lock
+-r--r--r--  1 gdm  gdm    11 Mar 17  2026 .X1024-lock
+-r--r--r--  1 gdm  gdm    11 Mar 17  2026 .X1025-lock
+drwxrwxrwt  2 root root 4096 Mar 17  2026 .X11-unix
+-r--r--r--  1 rize rize   11 Mar 17  2026 .X1-lock
+drwxrwxrwt  2 root root 4096 Mar 17  2026 .XIM-unix
+--- Home (~) ---
+/home/rize

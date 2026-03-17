@@ -1,0 +1,120 @@
+/home/rize
+total 124
+drwxr-x--- 24 rize rize 4096 Mar 15 23:58 .
+drwxr-xr-x  3 root root 4096 Mar 11 09:53 ..
+-rw-------  1 rize rize 4525 Mar 16 00:24 .bash_history
+-rw-r--r--  1 rize rize  220 Mar 11 09:53 .bash_logout
+-rw-r--r--  1 rize rize 3808 Mar 12 19:14 .bashrc
+drwx------ 17 rize rize 4096 Mar 12 19:30 .cache
+drwx------ 17 rize rize 4096 Mar 15 23:41 .config
+drwxrwxr-x  6 rize rize 4096 Mar 12 19:11 dclab_ws
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Desktop
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Documents
+drwxr-xr-x  4 rize rize 4096 Mar 12 19:33 Downloads
+-rw-rw-r--  1 rize rize   61 Mar 15 23:48 .gitconfig
+drwx------  2 rize rize 4096 Mar 15 23:27 .gnupg
+drwx------  3 rize rize 4096 Mar 11 16:56 .local
+drwx------  3 rize rize 4096 Mar 12 15:33 .mozilla
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Music
+drwxrwxr-x  4 rize rize 4096 Mar 15 23:44 os-se-p20240007
+drwxrwxr-x  4 rize rize 4096 Mar 15 23:58 OS-SE-p20240007
+-rw-r--r--  1 rize rize  306 Mar 12 15:20 .pam_environment
+drwxr-xr-x  3 rize rize 4096 Mar 12 17:59 Pictures
+drwx------  3 rize rize 4096 Mar 12 16:14 .pki
+-rw-r--r--  1 rize rize  807 Mar 11 09:53 .profile
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Public
+drwxrwxr-x  3 rize rize 4096 Mar 12 18:45 .ros
+drwx------  5 rize rize 4096 Mar 12 15:59 snap
+drwx------  2 rize rize 4096 Mar 11 16:59 .ssh
+-rw-r--r--  1 rize rize    0 Mar 12 17:48 .sudo_as_admin_successful
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Templates
+drwx------  6 rize rize 4096 Mar 12 15:33 .thunderbird
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Videos
+drwxrwxr-x  4 rize rize 4096 Mar 12 19:27 .vscode
+total 124
+drwxr-x--- 24 rize rize 4096 Mar 15 23:58 .
+drwxr-xr-x  3 root root 4096 Mar 11 09:53 ..
+-rw-------  1 rize rize 4525 Mar 16 00:24 .bash_history
+-rw-r--r--  1 rize rize  220 Mar 11 09:53 .bash_logout
+-rw-r--r--  1 rize rize 3808 Mar 12 19:14 .bashrc
+drwx------ 17 rize rize 4096 Mar 12 19:30 .cache
+drwx------ 17 rize rize 4096 Mar 15 23:41 .config
+drwxrwxr-x  6 rize rize 4096 Mar 12 19:11 dclab_ws
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Desktop
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Documents
+drwxr-xr-x  4 rize rize 4096 Mar 12 19:33 Downloads
+-rw-rw-r--  1 rize rize   61 Mar 15 23:48 .gitconfig
+drwx------  2 rize rize 4096 Mar 15 23:27 .gnupg
+drwx------  3 rize rize 4096 Mar 11 16:56 .local
+drwx------  3 rize rize 4096 Mar 12 15:33 .mozilla
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Music
+drwxrwxr-x  4 rize rize 4096 Mar 15 23:44 os-se-p20240007
+drwxrwxr-x  4 rize rize 4096 Mar 15 23:58 OS-SE-p20240007
+-rw-r--r--  1 rize rize  306 Mar 12 15:20 .pam_environment
+drwxr-xr-x  3 rize rize 4096 Mar 12 17:59 Pictures
+drwx------  3 rize rize 4096 Mar 12 16:14 .pki
+-rw-r--r--  1 rize rize  807 Mar 11 09:53 .profile
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Public
+drwxrwxr-x  3 rize rize 4096 Mar 12 18:45 .ros
+drwx------  5 rize rize 4096 Mar 12 15:59 snap
+drwx------  2 rize rize 4096 Mar 11 16:59 .ssh
+-rw-r--r--  1 rize rize    0 Mar 12 17:48 .sudo_as_admin_successful
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Templates
+drwx------  6 rize rize 4096 Mar 12 15:33 .thunderbird
+drwxr-xr-x  2 rize rize 4096 Mar 11 16:56 Videos
+drwxrwxr-x  4 rize rize 4096 Mar 12 19:27 .vscode
+--- Root directory (/) ---
+/
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+/
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+--- Back to home ---
+/home/rize

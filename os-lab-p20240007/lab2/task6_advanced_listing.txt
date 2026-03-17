@@ -1,0 +1,174 @@
+=== Task 6: Advanced Listing & Directory Audit ===
+--- Recursive Listing (ls -R) ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+server_config.txt
+
+techcorp/engineering/devops:
+docker-compose.yml
+Dockerfile
+pipeline.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+app_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+
+--- Sort by Size: engineering/ (ls -lS) ---
+total 4
+-rw-rw-r-- 1 rize rize 26 Mar 17 14:42 app_config.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 index.html
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 styles.css
+total 4
+-rw-rw-r-- 1 rize rize 29 Mar 17 14:42 server_config.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 app.js
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 database.sql
+total 8
+-rw-rw-r-- 1 rize rize 48 Mar 17 16:36 server_notice.txt
+-rw-rw-r-- 1 rize rize 29 Mar 17 14:42 pipeline.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 docker-compose.yml
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 Dockerfile
+
+--- Sort by Time: techcorp/ (ls -lt) ---
+total 8
+-rw-rw-r-- 1 rize rize 39 Mar 17 14:42 leave_policy.txt
+-rw-rw-r-- 1 rize rize 32 Mar 17 14:42 remote_work.txt
+total 12
+-rw-rw-r-- 1 rize rize 39 Mar 17 16:43 leave_policy.txt
+-rw-rw-r-- 1 rize rize 23 Mar 17 16:36 handbook.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 checklist.txt
+-rw-rw-r-- 1 rize rize 52 Mar 17 14:42 welcome_guide.txt
+total 8
+-rw-rw-r-- 1 rize rize 32 Mar 17 14:42 q1_2026_launch.txt
+-rw-rw-r-- 1 rize rize 35 Mar 17 14:42 social_media.txt
+
+--- Human-Readable (ls -lh) ---
+total 4.0K
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 banner.jpg
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 brochure.pdf
+-rw-rw-r-- 1 rize rize 22 Mar 17 16:36 logo_brief.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 logo.png
+total 8.0K
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 docker-compose.yml
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 Dockerfile
+-rw-rw-r-- 1 rize rize 29 Mar 17 14:42 pipeline.txt
+-rw-rw-r-- 1 rize rize 48 Mar 17 16:36 server_notice.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 4
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 database.sql
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 app.js
+-rw-rw-r-- 1 rize rize 29 Mar 17 14:42 server_config.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 12
+-rw-rw-r-- 1 rize rize 52 Mar 17 14:42 welcome_guide.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 checklist.txt
+-rw-rw-r-- 1 rize rize 23 Mar 17 16:36 handbook.txt
+-rw-rw-r-- 1 rize rize 39 Mar 17 16:43 leave_policy.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 12K
+drwxrwxr-x 5 rize rize 4.0K Mar 17 14:41 engineering
+drwxrwxr-x 4 rize rize 4.0K Mar 17 14:41 hr
+drwxrwxr-x 4 rize rize 4.0K Mar 17 16:37 marketing
+
+techcorp/engineering:
+total 12K
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:38 backend
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:39 devops
+drwxrwxr-x 2 rize rize 4.0K Mar 17 14:42 frontend
+
+techcorp/engineering/backend:
+total 4.0K
+-rw-rw-r-- 1 rize rize 29 Mar 17 14:42 server_config.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 app.js
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 database.sql
+
+techcorp/engineering/devops:
+total 8.0K
+-rw-rw-r-- 1 rize rize 48 Mar 17 16:36 server_notice.txt
+-rw-rw-r-- 1 rize rize 29 Mar 17 14:42 pipeline.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 docker-compose.yml
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 Dockerfile
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-rw-r-- 1 rize rize 26 Mar 17 14:42 app_config.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 index.html
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 styles.css
+
+techcorp/hr:
+total 8.0K
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:43 onboarding
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:39 policies
+
+techcorp/hr/onboarding:
+total 12K
+-rw-rw-r-- 1 rize rize 52 Mar 17 14:42 welcome_guide.txt
+-rw-rw-r-- 1 rize rize 39 Mar 17 16:43 leave_policy.txt
+-rw-rw-r-- 1 rize rize 23 Mar 17 16:36 handbook.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-rw-r-- 1 rize rize 39 Mar 17 14:42 leave_policy.txt
+-rw-rw-r-- 1 rize rize 32 Mar 17 14:42 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:38 assets
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:43 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 rize rize 22 Mar 17 16:36 logo_brief.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 banner.jpg
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 brochure.pdf
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 rize rize 35 Mar 17 14:42 social_media.txt
+-rw-rw-r-- 1 rize rize 32 Mar 17 14:42 q1_2026_launch.txt
