@@ -172,3 +172,67 @@ techcorp/marketing/campaigns:
 total 8.0K
 -rw-rw-r-- 1 rize rize 35 Mar 17 14:42 social_media.txt
 -rw-rw-r-- 1 rize rize 32 Mar 17 14:42 q1_2026_launch.txt
+
+--- Challenge Investigation ---
+--- Marketing Recursive Detailed Listing ---
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:38 assets
+drwxrwxr-x 2 rize rize 4.0K Mar 19 09:05 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 banner.jpg
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 brochure.pdf
+-rw-rw-r-- 1 rize rize 22 Mar 17 16:36 logo_brief.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 rize rize 32 Mar 17 14:42 q1_2026_launch.txt
+-rw-rw-r-- 1 rize rize 35 Mar 17 14:42 social_media.txt
+-rw-rw-r-- 1 rize rize  0 Mar 19 09:05 task5_file_organization.txt
+
+--- Engineering Devops Files Listing (smallest -> biggest) ---
+Dockerfile
+docker-compose.yml
+pipeline.txt
+security_audit.txt
+server_notice.txt
+--- Hidden Files (largest first) ---
+total 144K
+-rw-------  1 rize rize  12K Mar 19 08:40 .bash_history
+drwxr-x--- 27 rize rize 4.0K Mar 19 08:44 .
+drwxr-xr-x  3 root root 4.0K Mar 11 09:53 ..
+drwxrwxr-x  3 rize rize 4.0K Mar 17 18:20 build
+drwx------ 18 rize rize 4.0K Mar 17 18:31 .cache
+drwx------ 17 rize rize 4.0K Mar 15 23:41 .config
+drwxrwxr-x  6 rize rize 4.0K Mar 17 19:21 dclab_ws
+drwxr-xr-x  2 rize rize 4.0K Mar 11 16:56 Desktop
+drwxr-xr-x  2 rize rize 4.0K Mar 11 16:56 Documents
+drwxr-xr-x  4 rize rize 4.0K Mar 12 19:33 Downloads
+drwx------  2 rize rize 4.0K Mar 15 23:27 .gnupg
+drwxrwxr-x  2 rize rize 4.0K Mar 17 18:02 .gphoto
+drwxrwxr-x  3 rize rize 4.0K Mar 17 18:20 install
+drwx------  3 rize rize 4.0K Mar 11 16:56 .local
+drwxrwxr-x  3 rize rize 4.0K Mar 17 18:19 log
+drwx------  3 rize rize 4.0K Mar 12 15:33 .mozilla
+drwxr-xr-x  2 rize rize 4.0K Mar 11 16:56 Music
+drwxrwxr-x  4 rize rize 4.0K Mar 17 17:20 os-se-p20240007
+drwxr-xr-x  4 rize rize 4.0K Mar 17 16:55 Pictures
+drwx------  3 rize rize 4.0K Mar 12 16:14 .pki
+drwxr-xr-x  2 rize rize 4.0K Mar 11 16:56 Public
+drwxrwxr-x  3 rize rize 4.0K Mar 12 18:45 .ros
+drwx------  5 rize rize 4.0K Mar 12 15:59 snap
+drwx------  2 rize rize 4.0K Mar 11 16:59 .ssh
+drwxr-xr-x  2 rize rize 4.0K Mar 11 16:56 Templates
+drwx------  6 rize rize 4.0K Mar 12 15:33 .thunderbird
+drwxr-xr-x  2 rize rize 4.0K Mar 11 16:56 Videos
+drwxrwxr-x  4 rize rize 4.0K Mar 12 19:27 .vscode
+-rw-r--r--  1 rize rize 3.8K Mar 17 18:19 .bashrc
+-rw-r--r--  1 rize rize  807 Mar 11 09:53 .profile
+-rw-r--r--  1 rize rize  306 Mar 12 15:20 .pam_environment
+-rw-r--r--  1 rize rize  220 Mar 11 09:53 .bash_logout
+-rw-rw-r--  1 rize rize   61 Mar 17 16:59 .gitconfig
+-rw-------  1 rize rize   20 Mar 17 17:09 .lesshst
+-rw-r--r--  1 rize rize    0 Mar 12 17:48 .sudo_as_admin_successful

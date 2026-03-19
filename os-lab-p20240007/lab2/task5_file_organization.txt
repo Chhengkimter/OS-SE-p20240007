@@ -61,3 +61,69 @@ techcorp
         └── social_media.txt
 
 10 directories, 22 files
+--- Challenge File Organization ---
+--- Final Challenge Structure ---
+techcorp  [error opening dir]
+
+0 directories, 0 files
+techcrop  [error opening dir]
+
+0 directories, 0 files
+techcorp
+├── engineering
+│   ├── backend
+│   │   ├── app.js
+│   │   ├── database.sql
+│   │   ├── pipeline_backup.txt
+│   │   ├── server_config.txt
+│   │   └── task4_navigation_paths.txt
+│   ├── devops
+│   │   ├── docker-compose.yml
+│   │   ├── Dockerfile
+│   │   ├── pipeline.txt
+│   │   ├── security_audit.txt
+│   │   └── server_notice.txt
+│   └── frontend
+│       ├── frontend_config.txt
+│       ├── index.html
+│       └── styles.css
+├── hr
+│   ├── onboarding
+│   │   ├── checklist.txt
+│   │   ├── handbook.txt
+│   │   ├── leave_policy.txt
+│   │   ├── task5_file_organization.txt
+│   │   └── welcome_guide.txt
+│   └── policies
+│       ├── leave_policy.txt
+│       └── remote_work.txt
+└── marketing
+    ├── assets
+    │   ├── banner.jpg
+    │   ├── brochure.pdf
+    │   ├── logo_brief.txt
+    │   └── logo.png
+    └── campaigns
+        ├── q1_2026_launch.txt
+        ├── social_media.txt
+        └── task5_file_organization.txt
+
+10 directories, 27 files
+--- Marketing Recursive Detailed Listing ---
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 rize rize 4.0K Mar 17 16:38 assets
+drwxrwxr-x 2 rize rize 4.0K Mar 19 09:05 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 banner.jpg
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 brochure.pdf
+-rw-rw-r-- 1 rize rize 22 Mar 17 16:36 logo_brief.txt
+-rw-rw-r-- 1 rize rize  0 Mar 17 14:42 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 rize rize 32 Mar 17 14:42 q1_2026_launch.txt
+-rw-rw-r-- 1 rize rize 35 Mar 17 14:42 social_media.txt
+-rw-rw-r-- 1 rize rize  0 Mar 19 09:05 task5_file_organization.txt
