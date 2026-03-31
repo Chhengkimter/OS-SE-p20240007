@@ -200,7 +200,7 @@ Screenshot of running on Windows:
 
 > 📸 Your diagram of the OS layers, labeled with real data from your system:
 
-![OS Layers Diagram](os-class-activities-p20240007/activity1/screenshots/task4_os_layers_diagram.png)
+![OS Layers Diagram](os-class-activities-p20240007/activity1/screenshots/Task4_os_layer_diagram.png)
 
 ### Questions
 
@@ -229,4 +229,4 @@ Screenshot of running on Windows:
 
 What did you learn from this activity? What was the most surprising difference between library functions and system calls?
 
-> SOrry teacher, I ma be honest, the only interesting part are the coding parts and the structure of my OS layers. Also this is a nightmare please give us less tasks, everything is so time consuming and I almost lose my mind doing the screenshots and naming them. I know I submitted late it's because I planned to do it this weekend but got hit with a fever of 38.5 , anyway thank you please take it into consideration. 
+> Sorry teacher, I ma be honest, the only interesting part are the coding parts and the structure of my OS layers. Also this is a nightmare please give us less tasks, everything is so time consuming and I almost lose my mind doing the screenshots and naming them. I know I submitted late it's because I planned to do it this weekend but got hit with a fever of 38.5 , anyway thank you please take it into consideration. 
