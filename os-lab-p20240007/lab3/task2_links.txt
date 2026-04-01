@@ -1,0 +1,104 @@
+=== Task 2: Hard Links and Symbolic Links ===
+--- Original file ---
+6330307 -rw-rw-r-- 1 rize rize 35 Apr  1 14:01 config_original.txt
+TechCorp Global Configuration v3.1
+
+--- After creating hard link ---
+6330307 -rw-rw-r-- 2 rize rize 35 Apr  1 14:01 config_hardlink.txt
+6330307 -rw-rw-r-- 2 rize rize 35 Apr  1 14:01 config_original.txt
+
+--- After creating symbolic link ---
+6330307 -rw-rw-r-- 2 rize rize 35 Apr  1 14:01 config_hardlink.txt
+6330307 -rw-rw-r-- 2 rize rize 35 Apr  1 14:01 config_original.txt
+6330309 lrwxrwxrwx 1 rize rize 19 Apr  1 14:01 config_symlink.txt -> config_original.txt
+
+--- Content via hard link ---
+TechCorp Global Configuration v3.1
+--- Content via symbolic link ---
+TechCorp Global Configuration v3.1
+
+--- After modifying original ---
+Hard link content:
+TechCorp Global Configuration v3.1
+Updated: New security patch applied.
+Symlink content:
+TechCorp Global Configuration v3.1
+Updated: New security patch applied.
+
+--- After deleting original file ---
+Hard link still works:
+TechCorp Global Configuration v3.1
+Updated: New security patch applied.
+Symlink is broken:
+cat: config_symlink.txt: No such file or directory
+6330307 -rw-rw-r-- 1 rize rize 72 Apr  1 14:01 config_hardlink.txt
+6330309 lrwxrwxrwx 1 rize rize 19 Apr  1 14:01 config_symlink.txt -> config_original.txt
+
+--- stat on hard link ---
+  File: config_hardlink.txt
+  Size: 72        	Blocks: 8          IO Block: 4096   regular file
+Device: 10307h/66311d	Inode: 6330307     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    rize)   Gid: ( 1000/    rize)
+Access: 2026-04-01 14:01:44.174378409 +0700
+Modify: 2026-04-01 14:01:40.842389652 +0700
+Change: 2026-04-01 14:01:44.172378416 +0700
+ Birth: 2026-04-01 14:01:30.439423505 +0700
+--- readlink on symlink ---
+config_original.txt
+
+--- Symlink to directory ---
+lrwxrwxrwx 1 rize rize 17 Apr  1 14:01 web_shortcut -> projects/frontend
+index.html
+
+--- Real-world symlinks in /usr/bin ---
+lrwxrwxrwx 1 root root      10 Aug  8  2024 /usr/bin/python3 -> python3.10
+-rwxr-xr-x 1 root root 5937704 Mar  3 18:56 /usr/bin/python3.10
+lrwxrwxrwx 1 root root      34 Mar  3 18:56 /usr/bin/python3.10-config -> x86_64-linux-gnu-python3.10-config
+-rwxr-xr-x 1 root root     979 Mar 18  2022 /usr/bin/python3.10-coverage
+lrwxrwxrwx 1 root root      17 Aug  8  2024 /usr/bin/python3-config -> python3.10-config
+-rwxr-xr-x 1 root root     973 Mar 18  2022 /usr/bin/python3-coverage
+-rwxr-xr-x 1 root root     960 Jan 25  2023 /usr/bin/python3-futurize
+-rwxr-xr-x 1 root root     964 Jan 25  2023 /usr/bin/python3-pasteurize
+-rwxr-xr-x 1 root root    2555 Feb 27  2021 /usr/bin/python-argcomplete-check-easy-install-script3
+-rwxr-xr-x 1 root root     314 Feb 27  2021 /usr/bin/python-argcomplete-tcsh3
+lrwxrwxrwx 1 root root 24 Mar 11 09:48 /usr/bin/editor -> /etc/alternatives/editor
+--- Symlinks in /etc/alternatives ---
+total 36
+drwxr-xr-x   2 root root 12288 Mar 19 18:33 .
+drwxr-xr-x 142 root root 12288 Mar 20 18:14 ..
+lrwxrwxrwx   1 root root    21 Mar 12 18:42 aclocal -> /usr/bin/aclocal-1.16
+lrwxrwxrwx   1 root root    37 Mar 12 18:42 aclocal.1.gz -> /usr/share/man/man1/aclocal-1.16.1.gz
+lrwxrwxrwx   1 root root    23 Mar 11 09:48 arptables -> /usr/sbin/arptables-nft
+lrwxrwxrwx   1 root root    31 Mar 11 09:48 arptables-restore -> /usr/sbin/arptables-nft-restore
+lrwxrwxrwx   1 root root    28 Mar 11 09:48 arptables-save -> /usr/sbin/arptables-nft-save
+lrwxrwxrwx   1 root root    22 Mar 12 18:42 automake -> /usr/bin/automake-1.16
+lrwxrwxrwx   1 root root    38 Mar 12 18:42 automake.1.gz -> /usr/share/man/man1/automake-1.16.1.gz
+lrwxrwxrwx   1 root root    13 Mar 11 09:48 awk -> /usr/bin/mawk
+lrwxrwxrwx   1 root root    29 Mar 11 09:48 awk.1.gz -> /usr/share/man/man1/mawk.1.gz
+lrwxrwxrwx   1 root root    50 Mar 12 18:42 blas.pc-x86_64-linux-gnu -> /usr/lib/x86_64-linux-gnu/pkgconfig/blas-netlib.pc
+lrwxrwxrwx   1 root root    38 Mar 12 18:08 builtins.7.gz -> /usr/share/man/man7/bash-builtins.7.gz
+lrwxrwxrwx   1 root root    12 Mar 12 18:44 bzr -> /usr/bin/brz
+lrwxrwxrwx   1 root root    28 Mar 12 18:44 bzr.1.gz -> /usr/share/man/man1/brz.1.gz
+lrwxrwxrwx   1 root root    12 Mar 12 18:42 c++ -> /usr/bin/g++
+lrwxrwxrwx   1 root root    28 Mar 12 18:42 c++.1.gz -> /usr/share/man/man1/g++.1.gz
+lrwxrwxrwx   1 root root    16 Mar 12 18:42 c89 -> /usr/bin/c89-gcc
+lrwxrwxrwx   1 root root    32 Mar 12 18:42 c89.1.gz -> /usr/share/man/man1/c89-gcc.1.gz
+--- Challenge Links ---
+total 20
+6330307 -rw-rw-r-- 1 rize rize   72 Apr  1 14:01 config_hardlink.txt
+6330309 lrwxrwxrwx 1 rize rize   19 Apr  1 14:01 config_symlink.txt -> config_original.txt
+6330318 -rw-rw-r-- 3 rize rize   36 Apr  1 14:03 eng_data.txt
+6330318 -rw-rw-r-- 3 rize rize   36 Apr  1 14:03 hr_data.txt
+6330310 drwxrwxr-x 3 rize rize 4096 Apr  1 14:01 projects
+6330318 -rw-rw-r-- 3 rize rize   36 Apr  1 14:03 shared_data.txt
+6330313 lrwxrwxrwx 1 rize rize   17 Apr  1 14:01 web_shortcut -> projects/frontend
+index.html
+Shareed resource across departments
+Shareed resource across departments
+total 16
+6330307 -rw-rw-r-- 1 rize rize   72 Apr  1 14:01 config_hardlink.txt
+6330309 lrwxrwxrwx 1 rize rize   19 Apr  1 14:01 config_symlink.txt -> config_original.txt
+6330318 -rw-rw-r-- 2 rize rize   36 Apr  1 14:03 eng_data.txt
+6330318 -rw-rw-r-- 2 rize rize   36 Apr  1 14:03 hr_data.txt
+6330310 drwxrwxr-x 3 rize rize 4096 Apr  1 14:01 projects
+6330313 lrwxrwxrwx 1 rize rize   17 Apr  1 14:01 web_shortcut -> projects/frontend
