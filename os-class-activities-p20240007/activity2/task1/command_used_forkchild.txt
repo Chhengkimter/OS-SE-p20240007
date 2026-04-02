@@ -1,0 +1,20 @@
+        if (WIFEXITED(status)) {
+            printf("Parent: child exited with status %d\n", WEXITSTATUS(status));
+        }
+        printf("Parent: done.\n");
+    }
+
+    return 0;
+}
+EOF
+
+ 1159  gcc -o forkchild forkchild.c
+ 1160  ./forkchild > result_forkchild.txt 2>&1
+ 1161  cat result_forkchild.txt
+ 1162  ./forkchild > result_forkchild.txt 2>&1
+ 1163  gcc -o forkchild forkchild.c
+ 1164  ./forkchild > result_forkchild.txt 2>&1
+ 1165  cat result_forkchild.txt
+ 1166  ps -ef --forest | grep forkchild
+ 1167  [200~history | tail -n 20 > command_used_forkchild.txt~
+ 1168  history | tail -n 20 > command_used_forkchild.txt
