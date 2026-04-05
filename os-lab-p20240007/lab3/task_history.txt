@@ -1,0 +1,100 @@
+ 1570  echo "" >> ../task5_shared_library.txt
+ 1571  echo "--- Integration: Test run (using LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+ 1572  LD_LIBRARY_PATH=. ./sysinfo_test >> ../task5_shared_library.txt
+ 1573  cat > techcorp_sysinfo.h << 'EOF'
+#ifndef TECHCORP_SYSINFO_H
+#define TECHCORP_SYSINFO_H
+
+const char* tc_get_hostname(void);
+const char* tc_get_uptime(void);
+int tc_get_cpu_count(void);
+
+// NEW — Returns total memory in MB
+long tc_get_memory_mb(void);
+
+#endif
+EOF
+
+ 1574  cat > techcorp_memory.c << 'EOF'
+#include "techcorp_sysinfo.h"
+#include <stdio.h>
+
+long tc_get_memory_mb(void) {
+    FILE *fp = fopen("/proc/meminfo", "r");
+    if (fp) {
+        long mem_kb = 0;
+        if (fscanf(fp, "MemTotal: %ld kB", &mem_kb) == 1) {
+            fclose(fp);
+            return mem_kb / 1024;
+        }
+        fclose(fp);
+    }
+    return -1;
+}
+EOF
+
+ 1575  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+ 1576  gcc -fPIC -c techcorp_memory.c -o techcorp_memory.o
+ 1577  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o techcorp_memory.o
+ 1578  echo "" >> ../task5_shared_library.txt
+ 1579  echo "--- Phase 4: Partner B recompiled library with new function ---" >> ../task5_shared_library.txt
+ 1580  file libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+ 1581  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+ 1582  gcc -fPIC -c techcorp_memory.c -o techcorp_memory.o
+ 1583  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o techcorp_memory.o
+ 1584  echo "" >> ../task5_shared_library.txt
+ 1585  echo "--- Phase 4: Partner B recompiled library with new function ---" >> ../task5_shared_library.txt
+ 1586  file libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+ 1587  # Copy the library to the system library directory
+ 1588  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+ 1589  # Refresh the shared library cache
+ 1590  sudo ldconfig
+ 1591  # Verify it is registered
+ 1592  echo "" >> ../task5_shared_library.txt
+ 1593  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+ 1594  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+ 1595  # Re-test WITHOUT LD_LIBRARY_PATH
+ 1596  echo "" >> ../task5_shared_library.txt
+ 1597  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+ 1598  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+ 1599  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1600  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+ 1601  echo "" >> ../task5_shared_library.txt
+ 1602  echo "--- Phase 4: v2 test run ---" >> ../task5_shared_library.txt
+ 1603  LD_LIBRARY_PATH=. ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1604  # Copy the library to the system library directory
+ 1605  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+ 1606  # Refresh the shared library cache
+ 1607  sudo ldconfig
+ 1608  # Verify it is registered
+ 1609  echo "" >> ../task5_shared_library.txt
+ 1610  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+ 1611  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+ 1612  # Re-test WITHOUT LD_LIBRARY_PATH
+ 1613  echo "" >> ../task5_shared_library.txt
+ 1614  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+ 1615  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+ 1616  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1617  # Copy the library to the system library directory
+ 1618  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+ 1619  # Refresh the shared library cache
+ 1620  sudo ldconfig
+ 1621  # Verify it is registered
+ 1622  echo "" >> ../task5_shared_library.txt
+ 1623  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+ 1624  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+ 1625  # Re-test WITHOUT LD_LIBRARY_PATH
+ 1626  echo "" >> ../task5_shared_library.txt
+ 1627  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+ 1628  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+ 1629  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1630  echo "" >> ../task5_shared_library.txt
+ 1631  echo "--- Pair Information ---" >> ../task5_shared_library.txt
+ 1632  echo "Role A (Library Author → v2 Tester): Thai Monika - p20240055" >> ../task5_shared_library.txt
+ 1633  echo "Role B (Test Author → v2 Library Extender): Chheng Kimter - p20240007" >> ../task5_shared_library.txt
+ 1634  ldconfig -p | grep techcorp
+ 1635  ldd ./sysinfo_test_v2
+ 1636  echo "=== Full Command History ===" > task_history.txt
+ 1637  history | tail -n 100 >> task_history.txt
+ 1638  cd ..
+ 1639  history | tail -n 100 >> task_history.txt
