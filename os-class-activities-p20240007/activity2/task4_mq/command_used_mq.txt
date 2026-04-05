@@ -1,0 +1,20 @@
+
+    if (mq_unlink(QUEUE_NAME) == -1) {
+        perror("mq_unlink");
+        exit(EXIT_FAILURE);
+    }
+    printf("Receiver: queue unlinked.\n");
+
+    return 0;
+}
+EOF
+
+ 1314  gcc -o sender sender.c -lrt
+ 1315  gcc -o receiver receiver.c -lrt
+ 1316  # Step 1: Run the sender (puts a message in the queue)
+ 1317  ./sender
+ 1318  # Step 2: Run the receiver (reads the message and saves output)
+ 1319  ./receiver > result-mq-ipc.txt
+ 1320  # View the result
+ 1321  cat result-mq-ipc.txt
+ 1322  history | tail -n 20 > command_used_mq.txt

@@ -1,0 +1,20 @@
+    if (shm_unlink(name) == -1) {
+        perror("shm_unlink");
+        exit(EXIT_FAILURE);
+    }
+    printf("Consumer: shared memory unlinked.\n");
+
+    return 0;
+}
+EOF
+
+ 1300  nano shm-consumer.c 
+ 1301  gcc -o shm-producer shm-producer.c -lrt
+ 1302  gcc -o shm-consumer shm-consumer.c -lrt
+ 1303  # Step 1: Run the producer (writes to shared memory)
+ 1304  ./shm-producer
+ 1305  # Step 2: Run the consumer (reads from shared memory and saves output)
+ 1306  ./shm-consumer > result-shm-ipc.txt
+ 1307  # View the result
+ 1308  cat result-shm-ipc.txt
+ 1309  history | tail -n 20 > command_used_shm.txt
