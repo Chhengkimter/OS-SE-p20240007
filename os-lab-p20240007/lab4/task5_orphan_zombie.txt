@@ -1,0 +1,12 @@
+=== Task 5: Orphan & Zombie Processes ===
+
+--- Orphan process observation ---
+Child PID: 13497, Original PPID: 13496, New PPID after parent exit: 1745
+--- Zombie process observation ---
+Zombie PID: 14517, State: Z (zombie/defunct), Parent PID: 14516
+--- Zombie and Orphan Cleanup Notes ---
+Q: How are orphans cleaned up? A: Orphans are adopted by a 'subreaper' process, usually PID 1 (init or systemd). This new parent monitors the process and reaps its exit status once it eventually finishes execution.
+Q: How are zombies cleaned up? A: Zombies are cleaned up when their parent process executes a wait() or waitpid() system call. This allows the kernel to release the remaining process table entry.
+Q: Can you kill a zombie with 'kill -9'? Why or why not? A: No, you cannot kill a zombie because it is already dead. A zombie is simply a record of a terminated process. To remove it, you must either wait for the parent to reap it or kill the parent process so that PID 1 can adopt and clean it up.
+5a. Observation: Initially, the child appeared as '<defunct>' in the process table. After 10 seconds, the parent called wait(), and the zombie entry was immediately removed by the kernel.
+5b. Observation: Running 'ps --forest' showed the parent PID branching into three separate child PIDs. All children were listed as 'S' (sleeping) until the 30-second timer expired.

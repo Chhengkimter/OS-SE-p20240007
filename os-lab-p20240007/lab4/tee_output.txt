@@ -1,0 +1,15 @@
+total 1352
+drwxr-xr-x 142 root root    12288 Apr 21 14:48 .
+drwxr-xr-x  20 root root     4096 Mar 11 09:53 ..
+drwxr-xr-x   3 root root     4096 Feb 21  2024 acpi
+-rw-r--r--   1 root root     3028 Feb 21  2024 adduser.conf
+drwxr-xr-x   3 root root     4096 Feb 21  2024 alsa
+drwxr-xr-x   2 root root    12288 Apr  2 19:05 alternatives
+-rw-r--r--   1 root root      335 Mar 23  2022 anacrontab
+drwxr-xr-x   3 root root     4096 Mar 12 18:41 apache2
+-rw-r--r--   1 root root      433 Mar 23  2022 apg.conf
+drwxr-xr-x   5 root root     4096 Feb 21  2024 apm
+drwxr-xr-x   3 root root     4096 Mar 12 18:09 apparmor
+drwxr-xr-x   8 root root     4096 Mar 18 22:08 apparmor.d
+drwxr-xr-x   4 root root     4096 Mar 12 18:10 apport
+-rw-r--r--   1 root root      769 Feb 22  2022 appstream.conf
