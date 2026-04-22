@@ -1,0 +1,13 @@
+rize        7784    3231    7784  0    5 09:02 pts/0    00:00:00 ./threads_observe
+rize        7784    3231    7785  0    5 09:02 pts/0    00:00:00 ./threads_observe
+rize        7784    3231    7786  0    5 09:02 pts/0    00:00:00 ./threads_observe
+rize        7784    3231    7787  0    5 09:02 pts/0    00:00:00 ./threads_observe
+rize        7784    3231    7788  0    5 09:02 pts/0    00:00:00 ./threads_observe
+rize        7866    7792    7866  0    1 09:03 pts/1    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+--- /proc/8677/task/ listing ---
+8677
+8678
+8679
+8680
+8681

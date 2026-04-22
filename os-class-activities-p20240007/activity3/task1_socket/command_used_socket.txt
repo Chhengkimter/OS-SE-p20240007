@@ -1,0 +1,20 @@
+
+    /* 4. Send message to server */
+    send(sock_fd, message, strlen(message), 0);
+    printf("Client: sent message: \"%s\"\n", message);
+
+    /* 5. Receive response from server */
+    int bytes_read = read(sock_fd, buffer, BUFFER_SIZE - 1);
+    if (bytes_read > 0) {
+        buffer[bytes_read] = '\0';
+        printf("Client: received from server: \"%s\"\n", buffer);
+    }
+
+    /* 6. Close socket */
+    close(sock_fd);
+    printf("Client: connection closed.\n");
+
+    return 0;
+}
+EOF
+
