@@ -1,0 +1,1 @@
+-rwxrwxr-x 1 server server 16184 May 25 21:58 /home/server/OS-SE-p20240007/os-lab-p20240007/lab6/security_lab/whoami_suid

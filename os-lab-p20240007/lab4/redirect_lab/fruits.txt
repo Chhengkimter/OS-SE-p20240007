@@ -1,5 +1,0 @@
-banana
-apple
-cherry
-date
-apple

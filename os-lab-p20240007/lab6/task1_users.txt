@@ -1,0 +1,4 @@
+total 12
+drwxr-xr-x  3 root   root   4096 Nov 10  2025 .
+drwxr-xr-x 23 root   root   4096 Nov 10  2025 ..
+drwxr-x--- 23 server server 4096 Apr 24 23:35 server
