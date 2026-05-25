@@ -17,7 +17,7 @@ public class ThreadDemo {
                 System.out.printf("[%s] Count: %d (Thread ID: %d)%n",
                     name, i, Thread.currentThread().getId());
                 try {
-                    Thread.sleep(500);  /* Simulate work */
+                    Thread.sleep(5000000);  /* Simulate work */
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -31,9 +31,9 @@ public class ThreadDemo {
         System.out.println("PID: " + ProcessHandle.current().pid() + " — observe threads with ps or htop\n");
 
         /* Create and start 3 threads */
-        CounterThread t1 = new CounterThread("Alpha", 5);
-        CounterThread t2 = new CounterThread("Beta", 5);
-        CounterThread t3 = new CounterThread("Gamma", 5);
+        CounterThread t1 = new CounterThread("Alpha", 50000);
+        CounterThread t2 = new CounterThread("Beta", 50000);
+        CounterThread t3 = new CounterThread("Gamma", 50000);
 
         t1.start();
         t2.start();
