@@ -1,0 +1,9 @@
+=== mailman output ===
+Sent message to se-chheng-kimter
+Sent message to se-hai-monyoudom
+Messages sent: 2
+=== my inbox ===
+total 4
+-rw-rw-r-- 1 se-chheng-kimter se-chheng-kimter 120 May 26 14:11 message_from_se-chheng-kimter.txt
+=== messages I received ===
+Hello se-chheng-kimter, I am an automated bot written by se-chheng-kimter. I successfully read your secret word: mutex.

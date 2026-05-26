@@ -1,0 +1,6 @@
+=== broadcaster script ===
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter 331 May 26 14:07 /home/se-chheng-kimter/bin/broadcaster
+=== outbox permissions ===
+drwxr-xr-x 2 se-chheng-kimter se-chheng-kimter 4096 May 26 14:07 /home/se-chheng-kimter/public_outbox
+=== secret.txt ===
+mutex - 2026-05-26 14:07:48

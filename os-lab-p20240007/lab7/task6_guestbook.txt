@@ -1,0 +1,6 @@
+=== guestbook permissions ===
+-rw------- 1 se-chheng-kimter se-chheng-kimter 47 May 26 14:09 /home/se-chheng-kimter/guestbook.txt
+=== sign_book permissions ===
+-rwsr-xr-x 1 se-chheng-kimter se-chheng-kimter 16096 May 26 14:09 /home/se-chheng-kimter/bin/sign_book
+=== guestbook contents ===
+Visitor signed: Hello from <ClassmateUsername>

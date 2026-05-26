@@ -1,0 +1,3 @@
+=== warmup permissions ===
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter 0 May 26 13:55 /home/se-chheng-kimter/bin/warmup
+=== warmup output ===

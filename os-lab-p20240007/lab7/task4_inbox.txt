@@ -1,0 +1,4 @@
+=== inbox permissions ===
+drwx-wx-wx 2 se-chheng-kimter se-chheng-kimter 4096 May 26 14:04 /home/se-chheng-kimter/public_inbox
+=== inbox files as owner ===
+total 0

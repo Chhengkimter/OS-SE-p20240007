@@ -1,0 +1,9 @@
+#!/bin/bash
+
+secrets=("kernel" "mutex" "scheduler" "filesystem" "semaphore")
+secret=${secrets[$RANDOM % ${#secrets[@]}]}
+current_time=$(date +"%Y-%m-%d %H:%M:%S")
+
+echo "$secret - $current_time" > "$HOME/public_outbox/secret.txt"
+chmod 644 "$HOME/public_outbox/secret.txt"
+echo "Broadcast complete: $HOME/public_outbox/secret.txt"

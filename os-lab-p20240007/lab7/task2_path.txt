@@ -1,0 +1,5 @@
+=== PATH ===
+/home/se-chheng-kimter/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+=== warmup location ===
+/home/se-chheng-kimter/bin/warmup
+=== warmup command output ===
