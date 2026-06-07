@@ -1,0 +1,14 @@
+Run 1 final inventory: -2
+Run 2 final inventory: -2
+Run 3 final inventory: -2
+Run 4 final inventory: -2
+Run 5 final inventory: -2
+
+Explanation:
+TOC-TOU (Time-of-Check to Time-of-Use) occurs when multiple processes read
+the inventory value at nearly the same time before any of them has written
+the updated value back. Because the OS scheduler can interleave process
+execution, two bots may both read "10", both calculate "8", and both write
+"8" — effectively losing one purchase. This means the final inventory
+depends on the unpredictable order the OS schedules each background process,
+producing a different (and incorrect) result on each run.

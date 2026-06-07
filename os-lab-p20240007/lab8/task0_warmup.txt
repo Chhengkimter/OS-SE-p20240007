@@ -1,0 +1,25 @@
+=== argument viewer with arguments ===
+Script name ($0): /home/rize/bin/arg_viewer
+First argument ($1): Alice
+Second argument ($2): 3
+Number of arguments ($#): 2
+Exit status of 'test -n $1' ($?): 0
+=== argument viewer with no arguments ===
+Script name ($0): /home/rize/bin/arg_viewer
+First argument ($1): 
+Second argument ($2): 
+Number of arguments ($#): 0
+Exit status of 'test -n $1' ($?): 1
+=== successful probe ===
+mkdir exit status: 0
+Operator: Alice
+Cycles requested: 3
+Cycle 1: quantum widget console online
+Cycle 2: quantum widget console online
+Cycle 3: quantum widget console online
+exit status after success: 0
+=== invalid probe ===
+Error: cycles must be a positive integer.
+exit status after invalid input: 2
+=== loop/log directory evidence ===
+drwxrwxr-x 2 rize rize 4096 Jun  2 15:41 /home/rize/bin/probe_logs

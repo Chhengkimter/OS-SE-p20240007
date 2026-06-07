@@ -1,0 +1,8 @@
+=== final inventory ===
+0
+=== last 5 sales ===
+[p20240007] [SUCCESS] Bot_49 bought 2 widgets.
+[p20240007] [SUCCESS] Bot_43 bought 2 widgets.
+[p20240007] [SUCCESS] Bot_47 bought 2 widgets.
+[p20240007] [SUCCESS] Bot_46 bought 2 widgets.
+[p20240007] [SUCCESS] Bot_45 bought 2 widgets.
