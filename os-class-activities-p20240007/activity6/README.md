@@ -58,4 +58,5 @@
 
 ## Reflection
 
-This activity showed that deadlock is not just a theoretical problem — it appears naturally in any system where multiple threads compete for multiple shared resources in different orders. In banking and database systems, consistent lock ordering and mutex-based critical sections are essential to guarantee both safety (no deadlock) and correctness (no lost money). A single semaphore is simple and reliable for low-concurrency cases, while lock ordering allows higher concurrency without the serialization overhead.
+This activity showed that deadlock is not just a theoretical problem — it appears naturally in any system where multiple threads compete for multiple shared resources in different orders. In banking and database systems, consistent lock ordering and mutex-based critical sections are essential to guarantee both safety (no deadlock) and correctness (no lost money). A single semaphore is simple and reliable for low-concurrency cases, while lock ordering allows higher concurrency without the serialization 
+overhead.
