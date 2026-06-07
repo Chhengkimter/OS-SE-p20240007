@@ -1,0 +1,21 @@
+=== public api permissions ===
+drwxr-x--x 12 se-chheng-kimter se-chheng-kimter 4096 Jun  7 22:11 /home/se-chheng-kimter
+drwxr-xr-x  2 se-chheng-kimter se-chheng-kimter 4096 Jun  7 22:20 /home/se-chheng-kimter/public_api
+total 16
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter  937 Jun  7 22:42 buy_widget
+-rw-rw-rw- 1 se-chheng-kimter se-chheng-kimter    0 Jun  7 22:43 inventory.lock
+-rw-rw-rw- 1 se-chheng-kimter se-chheng-kimter    2 Jun  7 22:43 inventory.txt
+-rw-rw-rw- 1 se-chheng-kimter se-chheng-kimter 6582 Jun  7 22:43 sales.log
+=== inventory ===
+0
+=== red team sales evidence ===
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_50 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_32 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_49 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_41 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_44 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_40 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_26 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_7 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_47 bought 2 widgets.
+[p20240007] [SUCCESS] RedTeam_se-thai-monika_43 bought 2 widgets.

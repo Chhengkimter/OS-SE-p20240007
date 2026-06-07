@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Script name (\$0): $0"
+echo "First argument (\$1): $1"
+echo "Second argument (\$2): $2"
+echo "Number of arguments (\$#): $#"
+test -n "$1"
+echo "Exit status of 'test -n \$1' (\$?): $?"

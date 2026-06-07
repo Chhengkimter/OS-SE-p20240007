@@ -1,0 +1,8 @@
+=== drop zone permissions ===
+drwxrwxrwt 2 se-chheng-kimter se-chheng-kimter 4096 Jun  7 22:48 /home/se-chheng-kimter/vendor_reports
+=== drop zone files ===
+total 8
+-rw-rw-r-- 1 se-chheng-kimter se-chheng-kimter 27 Jun  7 22:46 my_rules.txt
+-rw-rw-r-- 1 se-thai-monika   se-thai-monika   15 Jun  7 22:48 partner_report.txt
+=== partner deletion result ===
+Permission denied - sticky bit prevented partner from deleting my_rules.txt
