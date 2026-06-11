@@ -1,0 +1,26 @@
+#!/bin/bash
+
+base="$HOME/os-lab-deadlock"
+alpha_lock="$base/vault_alpha/vault.lock"
+beta_lock="$base/vault_beta/vault.lock"
+
+exec 200> "$alpha_lock"
+exec 201> "$beta_lock"
+
+echo "sync_timeout: waiting for Vault Alpha"
+if ! flock -w 5 200; then
+    echo "ERROR: could not lock Vault Alpha within 5 seconds"
+    exit 1
+fi
+echo "sync_timeout: locked Vault Alpha"
+
+sleep 2
+
+echo "sync_timeout: waiting for Vault Beta"
+if ! flock -w 5 201; then
+    echo "ERROR: could not lock Vault Beta within 5 seconds"
+    exit 2
+fi
+echo "sync_timeout: locked Vault Beta"
+
+echo "sync_timeout: complete"

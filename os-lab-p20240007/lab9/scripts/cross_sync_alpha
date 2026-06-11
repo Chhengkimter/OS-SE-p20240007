@@ -1,0 +1,18 @@
+#!/bin/bash
+
+local_lock="$HOME/os-lab-deadlock/public_dr_alpha/vault.lock"
+partner_lock="/home/se-thai-monika/os-lab-deadlock/public_dr_beta/vault.lock"
+
+exec 200> "$local_lock"
+exec 201> "$partner_lock"
+
+echo "cross_sync_alpha: waiting for local Alpha"
+flock -x 200
+echo "cross_sync_alpha: locked local Alpha"
+sleep 5
+
+echo "cross_sync_alpha: waiting for partner Beta"
+flock -x 201
+echo "cross_sync_alpha: locked partner Beta"
+
+echo "cross_sync_alpha: complete"

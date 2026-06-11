@@ -1,0 +1,14 @@
+=== teardown script ===
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter 334 Jun 11 16:49 /home/se-chheng-kimter/bin/teardown
+=== process check ===
+No sync processes found.
+=== final working folder ===
+/home/se-chheng-kimter/os-lab-deadlock
+/home/se-chheng-kimter/os-lab-deadlock/public_dr_alpha
+/home/se-chheng-kimter/os-lab-deadlock/public_dr_alpha/vault.lock
+/home/se-chheng-kimter/os-lab-deadlock/vault_alpha
+/home/se-chheng-kimter/os-lab-deadlock/vault_alpha/README.txt
+/home/se-chheng-kimter/os-lab-deadlock/vault_alpha/vault.lock
+/home/se-chheng-kimter/os-lab-deadlock/vault_beta
+/home/se-chheng-kimter/os-lab-deadlock/vault_beta/README.txt
+/home/se-chheng-kimter/os-lab-deadlock/vault_beta/vault.lock

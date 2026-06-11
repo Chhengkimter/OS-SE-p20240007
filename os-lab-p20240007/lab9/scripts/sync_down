@@ -1,0 +1,22 @@
+#!/bin/bash
+
+base="$HOME/os-lab-deadlock"
+alpha_lock="$base/vault_alpha/vault.lock"
+beta_lock="$base/vault_beta/vault.lock"
+
+exec 200> "$alpha_lock"
+exec 201> "$beta_lock"
+
+echo "sync_down: waiting for Vault Beta"
+flock -x 201
+echo "sync_down: locked Vault Beta"
+sleep 5
+
+echo "sync_down: waiting for Vault Alpha"
+flock -x 200
+echo "sync_down: locked Vault Alpha"
+
+echo "sync_down: synchronizing Beta to Alpha"
+echo "$(date): sync_down completed" >> "$base/vault_alpha/sync.log"
+sleep 2
+echo "sync_down: complete"

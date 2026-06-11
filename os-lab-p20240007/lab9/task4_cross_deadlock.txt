@@ -1,0 +1,12 @@
+=== public DR permissions ===
+drwxr-x--x 15 se-chheng-kimter se-chheng-kimter 4096 Jun 11 15:48 /home/se-chheng-kimter
+drwxrwxr-x  5 se-chheng-kimter se-chheng-kimter 4096 Jun 11 16:39 /home/se-chheng-kimter/os-lab-deadlock
+drwxr-xr-x  2 se-chheng-kimter se-chheng-kimter 4096 Jun 11 16:39 /home/se-chheng-kimter/os-lab-deadlock/public_dr_alpha
+total 0
+-rw-rw-rw- 1 se-chheng-kimter se-chheng-kimter 0 Jun 11 16:42 vault.lock
+=== running cross sync processes ===
+se-chhe+  945171  0.0  0.0   7340  3636 pts/6    S+   16:42   0:00 /bin/bash /home/se-chheng-kimter/bin/cross_sync_alpha
+se-thai+  945174  0.0  0.0   7340  3632 pts/0    S+   16:42   0:00 /bin/bash /home/se-thai-monika/bin/cross_sync_beta
+=== partner role ===
+Partner username: <se-thai-monika
+My role: Player A

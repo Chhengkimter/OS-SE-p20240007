@@ -1,0 +1,12 @@
+#!/bin/bash
+
+base="$HOME/os-lab-deadlock"
+
+echo "Checking for sync processes:"
+ps aux | grep -E '[s]ync_|[c]ross_sync' || echo "No sync processes found."
+
+echo "Cleaning temporary sync logs:"
+rm -f "$base/vault_alpha/sync.log" "$base/vault_beta/sync.log"
+
+echo "Final working tree:"
+find "$base" -maxdepth 3 -type f -o -type d | sort

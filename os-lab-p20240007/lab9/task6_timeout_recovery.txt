@@ -1,0 +1,5 @@
+=== sync_timeout permissions ===
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter 585 Jun 11 16:47 /home/se-chheng-kimter/bin/sync_timeout
+=== timeout evidence ===
+Paste the timeout error and exit status shown in your terminal.
+=== process check after stopping old script ===
