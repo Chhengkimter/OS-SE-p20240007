@@ -1,0 +1,68 @@
+=== maintenance script permissions ===
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter 948 Jun 16 14:09 /home/se-chheng-kimter/bin/maintenance
+=== installed cron jobs ===
+# Lab10 maintenance - log rotation + health check, every 2 minutes (TEST interval)
+*/2 * * * * /home/se-chheng-kimter/bin/maintenance >> /home/se-chheng-kimter/os-lab-automation/logs/cron_maintenance.log 2>&1
+# Lab10 file backup - every 2 minutes (TEST interval)
+*/2 * * * * /home/se-chheng-kimter/bin/backup_project >> /home/se-chheng-kimter/os-lab-automation/logs/cron_backup.log 2>&1
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/se-chheng-kimter/bin/lab_session_job >> /home/se-chheng-kimter/os-lab-automation/logs/cron_session_job.log 2>&1
+
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/se-chheng-kimter/bin/deadline_job >> /home/se-chheng-kimter/os-lab-automation/logs/cron_deadline_job.log 2>&1
+# Lab10 heartbeat - runs every minute
+* * * * * date '+\%Y-\%m-\%d \%H:\%M:\%S heartbeat' >> $HOME/os-lab-automation/logs/heartbeat.log 2>&1
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+=== health report (multiple entries = cron ran it) ===
+----- health check at 2026-06-16 14:09:33 -----
+disk usage of home : 5%
+my processes       : 10
+load / uptime      :  14:09:33 up 21 days, 21:39, 28 users,  load average: 0.65, 0.39, 0.33
+logs rotated       : 0
+status             : OK (below 90% threshold)
+----- health check at 2026-06-16 14:10:01 -----
+disk usage of home : 5%
+my processes       : 11
+load / uptime      :  14:10:01 up 21 days, 21:40, 28 users,  load average: 0.42, 0.36, 0.32
+logs rotated       : 0
+status             : OK (below 90% threshold)
+----- health check at 2026-06-16 14:12:01 -----
+disk usage of home : 5%
+my processes       : 11
+load / uptime      :  14:12:01 up 21 days, 21:42, 28 users,  load average: 0.33, 0.36, 0.32
+logs rotated       : 0
+status             : OK (below 90% threshold)
+----- health check at 2026-06-16 14:14:01 -----
+disk usage of home : 5%
+my processes       : 11
+load / uptime      :  14:14:01 up 21 days, 21:44, 27 users,  load average: 0.17, 0.27, 0.29
+logs rotated       : 0
+status             : OK (below 90% threshold)
+----- health check at 2026-06-16 14:16:01 -----
+disk usage of home : 5%
+my processes       : 11
+load / uptime      :  14:16:01 up 21 days, 21:46, 27 users,  load average: 0.31, 0.30, 0.29
+logs rotated       : 0
+status             : OK (below 90% threshold)

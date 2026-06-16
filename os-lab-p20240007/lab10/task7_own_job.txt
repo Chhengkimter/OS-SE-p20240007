@@ -1,0 +1,14 @@
+=== my automation script ===
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+logfile="$base/logs/my_automation.log"
+
+echo "$(date '+%Y-%m-%d %H:%M:%S') | free space: $(df -h "$HOME" | awk 'NR==2 {print $4}')" >> "$logfile"
+=== my cron line ===
+*/1 * * * * /home/se-chheng-kimter/bin/my_automation >> /home/se-chheng-kimter/os-lab-automation/logs/cron_my_automation.log 2>&1
+=== output produced on schedule ===
+2026-06-16 14:17:33 | free space: 914G
+2026-06-16 14:18:01 | free space: 914G
+2026-06-16 14:19:01 | free space: 914G

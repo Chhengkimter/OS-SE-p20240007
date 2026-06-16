@@ -1,0 +1,11 @@
+=== script permissions ===
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter 405 Jun 16 13:36 /home/se-chheng-kimter/bin/automation_demo
+=== log contents ===
+2026-06-16 13:40:43 | automation_demo started by user se-chheng-kimter
+2026-06-16 13:40:43 | working directory is /home/se-chheng-kimter
+2026-06-16 13:40:43 | home directory is /home/se-chheng-kimter
+2026-06-16 13:40:43 | automation_demo finished successfully
+2026-06-16 13:40:43 | automation_demo started by user se-chheng-kimter
+2026-06-16 13:40:43 | working directory is /home/se-chheng-kimter
+2026-06-16 13:40:43 | home directory is /home/se-chheng-kimter
+2026-06-16 13:40:43 | automation_demo finished successfully

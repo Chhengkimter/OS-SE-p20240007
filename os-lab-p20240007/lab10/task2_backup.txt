@@ -1,0 +1,23 @@
+=== backup script permissions ===
+-rwxrwxr-x 1 se-chheng-kimter se-chheng-kimter 725 Jun 16 13:48 /home/se-chheng-kimter/bin/backup_project
+=== archives kept (should be 3) ===
+/home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134824.tar.gz
+/home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134822.tar.gz
+/home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134821.tar.gz
+=== backup log ===
+2026-06-16 13:48:20 | starting backup of /home/se-chheng-kimter/os-lab-automation/project
+2026-06-16 13:48:20 | created archive /home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134820.tar.gz
+2026-06-16 13:48:20 | no old archives to prune
+2026-06-16 13:48:20 | backup finished successfully
+2026-06-16 13:48:21 | starting backup of /home/se-chheng-kimter/os-lab-automation/project
+2026-06-16 13:48:21 | created archive /home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134821.tar.gz
+2026-06-16 13:48:21 | no old archives to prune
+2026-06-16 13:48:21 | backup finished successfully
+2026-06-16 13:48:22 | starting backup of /home/se-chheng-kimter/os-lab-automation/project
+2026-06-16 13:48:22 | created archive /home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134822.tar.gz
+2026-06-16 13:48:22 | no old archives to prune
+2026-06-16 13:48:23 | backup finished successfully
+2026-06-16 13:48:24 | starting backup of /home/se-chheng-kimter/os-lab-automation/project
+2026-06-16 13:48:24 | created archive /home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134824.tar.gz
+2026-06-16 13:48:24 | pruned old archive /home/se-chheng-kimter/os-lab-automation/backups/project_20260616_134820.tar.gz
+2026-06-16 13:48:24 | backup finished successfully
