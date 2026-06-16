@@ -1,0 +1,31 @@
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+source_dir="$base/project"
+backup_dir="$base/backups"
+logfile="$base/logs/backup_project.log"
+keep=3
+
+log() { echo "$(date '+%Y-%m-%d %H:%M:%S') | $1" >> "$logfile"; }
+
+mkdir -p "$backup_dir"
+
+ts=$(date +%Y%m%d_%H%M%S)
+archive="$backup_dir/project_$ts.tar.gz"
+
+log "starting backup of $source_dir"
+tar -czf "$archive" -C "$base" project
+log "created archive $archive"
+
+old=$(ls -1t "$backup_dir"/project_*.tar.gz 2>/dev/null | tail -n +$((keep + 1)) || true)
+if [ -n "$old" ]; then
+    echo "$old" | while read -r f; do
+        rm -f "$f"
+        log "pruned old archive $f"
+    done
+else
+    log "no old archives to prune"
+fi
+
+log "backup finished successfully"

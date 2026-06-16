@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+outdir="$base/cron_tasks"
+mkdir -p "$outdir"
+
+echo "DEADLINE_JOB_OK | $(date '+%Y-%m-%d %H:%M:%S') | user=$(whoami) | host=$(hostname)" >> "$outdir/deadline_job.out"

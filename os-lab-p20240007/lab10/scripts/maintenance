@@ -1,0 +1,33 @@
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+logdir="$base/logs"
+archive_dir="$logdir/archive"
+report="$base/logs/health_report.log"
+threshold=90
+
+mkdir -p "$archive_dir"
+stamp() { date '+%Y-%m-%d %H:%M:%S'; }
+
+rotated=0
+while IFS= read -r f; do
+    mv "$f" "$archive_dir/"
+    rotated=$((rotated + 1))
+done < <(find "$logdir" -maxdepth 1 -type f -name '*.log' -mtime +1)
+
+usage=$(df -P "$HOME" | awk 'NR==2 {gsub("%",""); print $5}')
+procs=$(ps -u "$(whoami)" --no-headers | wc -l)
+
+{
+    echo "----- health check at $(stamp) -----"
+    echo "disk usage of home : ${usage}%"
+    echo "my processes       : ${procs}"
+    echo "load / uptime      : $(uptime)"
+    echo "logs rotated       : ${rotated}"
+    if [ "$usage" -ge "$threshold" ]; then
+        echo "ALERT: disk usage ${usage}% has reached the ${threshold}% threshold!"
+    else
+        echo "status             : OK (below ${threshold}% threshold)"
+    fi
+} >> "$report"

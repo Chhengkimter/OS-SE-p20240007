@@ -1,0 +1,20 @@
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+logfile="$base/logs/automation_demo.log"
+
+log() {
+    local message="$1"
+    echo "$(date '+%Y-%m-%d %H:%M:%S') | $message" | tee -a "$logfile"
+}
+
+main() {
+    log "automation_demo started by user $(whoami)"
+    log "working directory is $(pwd)"
+    log "home directory is $HOME"
+    log "automation_demo finished successfully"
+}
+
+main
+exit 0

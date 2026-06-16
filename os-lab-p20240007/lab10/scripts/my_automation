@@ -1,0 +1,7 @@
+#!/bin/bash
+set -euo pipefail
+
+base="$HOME/os-lab-automation"
+logfile="$base/logs/my_automation.log"
+
+echo "$(date '+%Y-%m-%d %H:%M:%S') | free space: $(df -h "$HOME" | awk 'NR==2 {print $4}')" >> "$logfile"
