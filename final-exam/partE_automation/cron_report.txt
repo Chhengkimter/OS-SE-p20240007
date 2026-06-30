@@ -1,0 +1,47 @@
+=== crontab -l (at time of capture) ===
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/se-chheng-kimter/bin/lab_session_job >> /home/se-chheng-kimter/os-lab-automation/logs/cron_session_job.log 2>&1
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/se-chheng-kimter/bin/deadline_job >> /home/se-chheng-kimter/os-lab-automation/logs/cron_deadline_job.log 2>&1
+
+* * * * * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/timed_job /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_recurring.log >> /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_recurring.log 2>&1
+23 15 30 6 * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/timed_job /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_oneshot.log >> /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_oneshot.log 2>&1
+
+*/2 * * * * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/backup_exam
+0 16 30 6 * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/backup_exam
+
+=== cron_recurring.log ===
+[2026-06-30 15:21:01] timed_job fired (PID 1699564)
+[2026-06-30 15:22:01] timed_job fired (PID 1701731)
+[2026-06-30 15:23:01] timed_job fired (PID 1703262)
+[2026-06-30 15:24:01] timed_job fired (PID 1704968)
+[2026-06-30 15:25:01] timed_job fired (PID 1706279)
+[2026-06-30 15:26:01] timed_job fired (PID 1710485)
+[2026-06-30 15:27:01] timed_job fired (PID 1711982)
+
+=== cron_oneshot.log ===
+[2026-06-30 15:23:01] timed_job fired (PID 1703272)
+
+Note: exam spec requested one-shot at 14:35 today; substituted to <HH:MM>
+since 14:35 had already passed when this exam was attempted.
+
+=== Part E3: crontab -l (after adding backup_exam entries) ===
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/se-chheng-kimter/bin/lab_session_job >> /home/se-chheng-kimter/os-lab-automation/logs/cron_session_job.log 2>&1
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/se-chheng-kimter/bin/deadline_job >> /home/se-chheng-kimter/os-lab-automation/logs/cron_deadline_job.log 2>&1
+
+* * * * * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/timed_job /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_recurring.log >> /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_recurring.log 2>&1
+23 15 30 6 * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/timed_job /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_oneshot.log >> /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/logs/cron_oneshot.log 2>&1
+
+*/2 * * * * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/backup_exam
+0 16 30 6 * /home/se-chheng-kimter/OS-SE-p20240007/final-exam/partE_automation/scripts/backup_exam
+
+=== ~/exam-backups/ listing ===
+total 88
+drwxrwxr-x  2 se-chheng-kimter se-chheng-kimter  4096 Jun 30 15:28 .
+drwxr-x--x 20 se-chheng-kimter se-chheng-kimter  4096 Jun 30 15:24 ..
+-rw-rw-r--  1 se-chheng-kimter se-chheng-kimter 19550 Jun 30 15:24 final-exam-20260630-152401.tar.gz
+-rw-rw-r--  1 se-chheng-kimter se-chheng-kimter 19562 Jun 30 15:26 final-exam-20260630-152601.tar.gz
+-rw-rw-r--  1 se-chheng-kimter se-chheng-kimter 19941 Jun 30 15:27 final-exam-20260630_152758.tar.gz
+-rw-rw-r--  1 se-chheng-kimter se-chheng-kimter 19947 Jun 30 15:28 final-exam-20260630_152801.tar.gz

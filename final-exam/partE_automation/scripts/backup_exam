@@ -1,0 +1,13 @@
+#!/bin/bash
+
+EXAM_DIR="$HOME/OS-SE-p20240007/final-exam"
+BACKUP_DIR="$HOME/exam-backups"
+
+mkdir -p "$BACKUP_DIR"
+
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+ARCHIVE="$BACKUP_DIR/final-exam-$TIMESTAMP.tar.gz"
+
+tar -czf "$ARCHIVE" -C "$HOME/OS-SE-p20240007" final-exam
+
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Backed up final-exam to $ARCHIVE"

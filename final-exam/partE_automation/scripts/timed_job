@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 <output_file>" >&2
+    exit 1
+fi
+OUTPUT_FILE="$1"
+mkdir -p "$(dirname "$OUTPUT_FILE")"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] timed_job fired (PID $$)" >> "$OUTPUT_FILE"
